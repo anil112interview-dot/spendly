@@ -5,3 +5,16 @@ Add tow links to the footer in @templates/base.html:
 Both should be plain text links, no special styling need for now.
 Pointing Both to '#' as a placeholder href since pages don't exists yet.
 Do not modify anything else on the page.
+
+======================================
+
+Create a "Terms and Conditions" page for Spendly.
+
+Add a new route in app.py:
+GET /terms → renders templates/terms.html
+
+Create templates/terms.html with generic terms and conditions content appropriate for a personal expense tracking app. 
+Include sections like: Acceptance of Terms, Use of Service, User Data, Limitations of Liability, and Changes to Terms. 
+Extend base.html if it exists, otherwise match the style of landing.html.
+
+In templates/landing.html, update the "Terms and Conditions" footer link href from "#" to "/terms".
