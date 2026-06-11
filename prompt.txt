@@ -1,0 +1,7 @@
+Add tow links to the footer in @templates/base.html:
+- "Terms and Conditions"
+- "Privacy Policy"
+
+Both should be plain text links, no special styling need for now.
+Pointing Both to '#' as a placeholder href since pages don't exists yet.
+Do not modify anything else on the page.
