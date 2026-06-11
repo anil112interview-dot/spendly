@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy - Spendly{% endblock %}
+
+{% block content %}
+<style>
+    /* Match the spacing used by other sections (e.g., .features, .cta-section) */
+    .terms-section {
+        padding: 5rem 2rem;
+        background-color: var(--paper);
+        text-align: left;
+    }
+    .terms-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .terms-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .terms-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 2.5rem);
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+    }
+    .terms-subtitle {
+        font-size: 1rem;
+        color: var(--ink-muted);
+        margin-bottom: 0;
+    }
+    .terms-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .terms-card {
+        background: var(--paper-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .terms-card:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+<section class="terms-section">
+    <div class="terms-container">
+        <div class="terms-header">
+            <h1 class="terms-title">Privacy Policy</h1>
+            <p class="terms-subtitle">How we collect, use, and protect your data.</p>
+        </div>
+
+        <div class="terms-content">
+            <div class="terms-card">
+                <h2>Data We Collect</h2>
+                <p>We collect information you provide directly to us, including your name, email address, and any expense data you record in Spendly. This may also include payment information when you choose to upgrade to premium features.</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>How We Use Your Data</h2>
+                <p>We use your data to provide and improve our expense tracking services, personalize your experience, communicate with you about updates, and ensure the security of your account. We do not sell your personal information to third parties.</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>Data Storage</h2>
+                <p>Your data is stored securely on our servers with industry-standard encryption. We retain your information for as long as your account remains active or as needed to provide our services. You may request deletion of your data at any time.</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>Third Party Services</h2>
+                <p>Our service may contain links to third-party websites or services that we don't operate. We are not responsible for the practices of third parties and recommend reviewing their privacy policies before providing any personal information.</p>
+            </div>
+
+            <div class="terms-card">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this privacy policy or your data, please contact us at privacy@spendly.example.com. We will respond to your inquiry within a reasonable timeframe.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
