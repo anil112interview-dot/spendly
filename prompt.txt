@@ -30,3 +30,4 @@ Create templates/privacy.html with generic privacy policy content appropriate fo
 
 In templates/landing.html, update the "Privacy Policy" footer link href from "#" to "/privacy".
 
+"C:\Users\anil1\Downloads\Screenshot.png"
